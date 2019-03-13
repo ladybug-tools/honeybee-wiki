@@ -11,9 +11,9 @@
 
     * [Intro IV - EnergyPlus Modeling Assumptions](Intro-IV.md)
 
-    * [Intro V - Conventions and Code Hygiene](Intro-V-‐-Conventions-and-Code-Hygiene.md)
+    * [Intro V - Conventions and Code Hygiene](Intro-V.md)
 
-    * [Intro VI - Contributing to Honeybee Wiki!](Intro-VI-‐-Contributing-to-Honeybee-Wiki!.md)
+    * [Intro VI - Contributing to Honeybee Wiki!](Intro-VI.md)
 
 * [Single Zone Model Home](Single-Zone-Model.md)
 
