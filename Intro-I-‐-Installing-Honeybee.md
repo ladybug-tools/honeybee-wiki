@@ -1,3 +1,0 @@
-Ladybug and Honeybee run inside of Rhino, and LB and HB work in tandem with one another, so it is necessary to install all three for working in Honeybee. Ladybug and Honeybee are plugins for Grasshopper, so if you are working in Rhino 5, you must also install Grasshopper first. Grasshopper is included in Rhino 6. 
-
-You can find further instructions for installing the software here: [Installation instructions](https://github.com/mostaphaRoudsari/ladybug/wiki/Installation-Instructions).

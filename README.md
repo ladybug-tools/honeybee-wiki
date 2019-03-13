@@ -1,82 +1,87 @@
-_Contributors_:
-<a href="https://github.com/alexandermatthias" title="Alexander Matthias Jacobson"><img src="https://github.com/alexandermatthias.png" height="24"></a>
-# 
+Wiki Honeybee Página de Inicio
+==============================
 
-# Honeybee Wiki Home
+Bienvenido al Wiki Oficial de Honeybee, para guías de modelado energético usando Honeybee.
 
-Welcome to the Official Honeybee Wiki, for guides to energy modeling using Honeybee. 
+La guía de **Modelado de Zona Unitaria** cubre la creación de geometría apropiada en Rhino, la especificación de datos de entrada y la configuración de un modelo energético, el envío de un modelo energético a un motor de cálculo y la interpretación de resultados de esa simulación. Honeybee utiliza componentes de Ladybug, que es otro plugin *open source* para Grasshopper diseñado para importar, visualizar y analizar gráficamente datos climáticos.
 
-The **Single Zone Model** guide covers creating suitable geometry in Rhino, specifying inputs and settings for an energy model, sending the energy model to a simulation engine, and interpreting the results of that simulation. Honeybee uses components from Ladybug, which is another open-source plugin for Grasshopper designed for importing climate data, visualizing the data, and performing geometric analysis. 
+La guía de **Comparación de Estrategias Pasivas** complementa el Modelado de Zona Unitaria, explicando el marco de trabajo que Honeybee emplea para incorporar más niveles de detalle a una simulación. Esta sección enseña cómo estudiar cinco estrategias de diseño comunes y pretende ser un paso intermedio hacia tópicos más avanzados.
 
-The **Comparing Passive Strategies** guide builds upon the the Single Zone Model, to explain the framework Honeybee uses for adding more layers of nuance to your simulation. This section shows how to study five common design strategies and it is intended as an intermediate step to more advanced topics.
+En **Tópicos**, el formato de estos tutoriales cambia. En vez de avanzar a través de una serie de instrucciones paso-a-paso, la guía se divide y se enfoca en métodos para referirse a técnicas específicas de modelado y situaciones particulares de diseño. Estas son algunas de las razones para esta transición:
 
-In **Topics**, the format of these tutorials changes. Instead of walking through a sequential set of step-by-step instructions, the guide branches out to address methods for addressing specific modeling techniques / design issues. There are several reasons for this transition:
-1. It would be impossible for us to write a single sequential tutorial that meets everyone's needs. 
-2. Designers are often looking for methods of evaluating a specific design problem, and this way the guide can act as a repository of methods / best-practices.
-3. This format makes it much easier for others to contribute to the guide.
+1. Sería imposible para nosotros escibir un solo tutorial secuencial que cumpla las necesidades de cada persona.
+2. Los diseñadores buscan frecuentemente métodos para evaluar problemas específicos de diseño, de esta manera la guía puede fungir como un repositorio de métodos / buenas prácticas.
+3. Este formato hace mucho más fácil que otros puedan contribuir a la guía.
 
-## Overview of Honeybee Energy Modeling Workflow
+Vista General del Proceso de Modelado Energético de Honeybee
+------------------------------------------------------------
 
-The relationship between Rhino, Grasshopper, Ladybug, Honeybee and the simulation engines Honeybee communicates with is described in the diagram below. Ladybug is the simpler tool to use, and it provides many tools valuable to the early design phases. Honeybee makes it possible to delve much deeper and provide more nuanced analysis.
+La relación entre Rhino, Grasshopper, Ladybug, Honeybee y los motores de simulación con los que Honeybee se comunica se describe en el diagrama mostrado más abajo. Ladybug es la herramienta más simple de utilizar y provee muchos recursos muy útiles en las fases más tempranas del diseño. Honeybee hace posible involucrarse mucho más a fondo y proveer un análisis más detallado.
 
-![depth of analysis](https://user-images.githubusercontent.com/44324576/51753145-60685680-20b9-11e9-8526-299586429511.png)
+![alt text](https://user-images.githubusercontent.com/44324576/51753145-60685680-20b9-11e9-8526-299586429511.png "Proceso de modelado con Honeybee")
 
+Honeybee y Ladybug son ambos necesarios para seguir esta guía, pero no es necesario leer las guías sobre Ladybug antes de proceder. Los fundamentos necesarios acerca de Ladybug serán aquí cubiertos. Si estás solamente interesado en análisis geométrico, Ladybug puede ser soficiente. Por ejemplo, Ladybug puede calcular la dirección de la luz del sol en cualquier momento específico, e incluso el número de horas de luz solar directa impactando un objeto a lo largo del año. Sin embargo, Honeybee es necesario para cualquier cosa que tenga que ver con materiales, como el rastreo de trayectorias para la iluminación natural difusa, tomar en cuenta las ganancias de calor resultante en un espacio, simular variaciones térmicas o estimar los consumos energéticos anuales de un edificio.
 
-Both Honeybee and Ladybug are necessary for following this guide, but it is not necessary to read the guides on Ladybug before proceeding. Minimum knowledge of Ladybug is covered here. 
-If you are only interested in geometric analysis, Ladybug may be sufficient. For example, Ladybug can calculate the direction of sunlight at any given time, and even the number of hours of direct sunlight shining on a given piece of geometry over a year. However, Honeybee is necessary for anything that requires accounting for materials, like raytracing calculations of diffuse daylight, accounting for the resulting heat gains, simulating temperatures, or estimating total energy consumption.
+![alt text](https://user-images.githubusercontent.com/44324576/49177299-298df280-f34d-11e8-9f48-40bc1bac363c.jpg "Relaciones entre Honeybee y motores de cálculo")
 
-![000_honeybee relation to other engines](https://user-images.githubusercontent.com/44324576/49177299-298df280-f34d-11e8-9f48-40bc1bac363c.jpg)
+Es importante dejar en claro una distinción: Honeybee en realidad no ejecuta simulaciones. Honeybee es una interfaz que crea instrucciones para que otros programas de software ('motores de cálculo') corran las simulaciones. Hasta noviembre de 2018 Honeybee posee interfaces con cinco motores de cálculo:
 
-It's important to make one distinction clear: Honeybee does not actually run simulations.  Honeybee is an interface that creates instructions for other software programs ('engines') to run simulations.
-As of Nov 2018 Honeybee has interfaces to five analysis engines: 
-1. Radiance for point-in-time lighting
-2. Daysim (which uses Radiance) for lighting over time
-3. EnergyPlus for heat, electrical and fuel resource modeling
-4. OpenStudio for integration of Radiance and EnergyPlus
-5. Therm for conduction through construction models and condensation risk
+1. Radiance para simular iluminación en un punto específico del tiempo
+2. Daysim (que utiliza Radiance) para iluminación a lo largo del tiempo
+3. EnergyPlus para simulaciones de balances térmicos y modelación de consumos energéticos 
+4. OpenStudio para la integración de Radiance y EnergyPlus
+5. Therm para simular la conducción de calor y evaluar riesgos de condensación en modelos de construcciones
 
-For more information see Our Story on Ladybug.tools website (https://www.ladybug.tools/about.html).
+Para mayor información, es posible consultar la sección *Our Story* en el [website de Ladybug](https://www.ladybug.tools/about.html).
 
-### EnergyPlus Simulation Engine
-This tutorial will deal primarily with the third engine, EnergyPlus. Technically, we will be using OpenStudio to send a simulation through EnergyPlus, but the important thing to understand is that EnergyPlus creates an energy model that tracks the movement of heat in and out of a building. The EnergyPlus simulation engine is an immense collection of work by 
+Motor de Cálculo EnergyPlus
+---------------------------
 
-### Thermal Zones
+Este tutorial tratará primordialmente con el tercer motor de cálculo, EnergyPlus. Técnicamente, estaremos empleando OpenStudio para enviar la simulación a través de EnergyPlus, pero lo importante es comprender que EnergyPlus crea un modelo energético que rastrea el movimiento del calor hacia y desde el edificio. El motor de cálculo EnergyPlus es una inmensa colección de trabajo realizado por **múltiples colaboradores alrededor del mundo y es coordinado por el Departamento de Energía de los Estados Unidos.**
 
-Buildings are described using 3D zones. Each zone represents a thermally distinct space. So, a building can be treated as a single zone, or it can be studied in more detail by treating each room as a separate zone. Honeybee has tools for creating these zones from geometry modeled in Rhino. Each zone is modeled as a closed 3D shape, and Honeybee has tools for assigning thickness and material properties to each surface of a zone. Windows and doors are treated as sub-elements which 'belong' to a particular surface of a zone.
+Zonas Térmicas
+--------------
 
-Zones are the unit of analysis. To track the heat moving in and out of each zone over a period of time (i.e. an entire year), the simulation will run in time-steps (i.e. 10-minute intervals). As we set up the simulation, we will assign characteristics to each of these time steps. For example, we can refer to climate data for simulating conditions outside the zone, like outdoor hourly air temperature. We can also simulate conditions inside the zone using inputs like occupancy schedules or equipment schedules. We will also specify how equipment will respond to these interior and exterior conditions, by for example specifying thermostat set points.
+Al trabajar en un modelo energético, los edificios son descritos utilizando zonas tridimensionales creadas en un entorno gráfico. Cada zona representa un espacio térmicamente distinto. Por lo tanto, un edificio puede ser tratado como una sola zona térmica, o puede ser estudiado más a detalle al descomponerlo y caracterizar cada espacio interior como una zona térmica independiente. Honeybee incluye herramientas para crear estas zonas a partir de geometría tridimensional modelada en Rhino. Cada zona es modelada como una forma 3D, delimitada por múltiples superficies que encierran un volumen; Honeybee asigna propiedades físicas para cada una de estas superficies. Las ventanas y puertas son tratadas como sub-elementos que 'pertenecen' a una superficie específica dentro de una zona.
 
-### Simulation Calculations
-Once we have used Honeybee to enter all the information we want to consider, we will instruct Honeybee to 'run' the simulation. At this point, Honeybee sends the inputs described above as a set of instructions to OpenStudio, which forwards instructions to the EnergyPlus simulation engine. The simulation engine will then run through each time-step of the specified period, and and return the raw output calculations to Honeybee. Honeybee has tools to analyze these results. For example it can retrieve specific metrics, visualize the energy balance of each zone, compare zones to each other, and aggregate results from several zones.
+Las zonas son la únidad básica de análisis. Para rastrear el calor que se desplaza desde y hacia cada zona, a través de un periodo de tiempo (i.e. un año completo), la simulación correrá en pasos de tiempo (i.e. intervalos de 10 minutos). A medida que una simulación va siendo ejecutada, características específicas serán calculadas y asignadas para cada uno de estos pasos de tiempo. Por ejemplo, es posible referirse a los datos climáticos para simular las condiciones en el exterior de una zona, como la temperatura hora-por-hora del aire exterior. También podemos simular condiciones en el interior de la zona, empleando datos de entrada como horarios de ocupación o de utilización de equipamiento. Es posible también especificar cómo el equipamiento responderá a estas condiciones interiores y exteriores, por ejemplo especificando temperaturas de consigna interiores.
 
-### Analyzing Results
-As we analyze these results, we will check them for reasonableness, and identify which factors are contributing most to the energy use of the building. Once the simulation and analysis are complete, we have established one complete feedback loop through which we can begin to alter the design and test the impact of modifications on performance.
+Cálculos de Simulación
+----------------------
 
-### Why create an energy model at all?
-1. Informing design 
-2. Forecasting energy use
-3. Creating convincing arguments for design ideas
-4. Building design intuition
-5. Sensitivity analysis
-6. Calculating payback periods for energy conservation measures (ECMs)
-7. Code compliance
-8. LEED BREAM or DGNB compliance
+Una vez que hemos empleado Honeybee para introducir toda la información que deseamos considerar, indicaremos a Honeybee que es momento de 'correr' nuestra simulación. En este punto, Honeybee manda los datos de entrada arriba descritos como un conjunto de instrucciones para OpenStudio, que a su vez envía estas instrucciones al motor de cálculo EnergyPlus. El motor de cálculo recorrerá entonces cada paso de tiempo a través del periodo de análisis especificado y regresará datos de salida de vuelta para Honeybee. Honeybee incluye herramientas para analizar estos resultados. Por ejemplo, es posible extraer métricas específicas, visualizar el balance térmico en cada zona, comparar zonas entre sí y agregar resultados de múltiples zonas.
 
-This guide is sufficient for the first five goals, but the nuances necessary to calculate payback periods and create code-compliant models are beyond the scope of this tutorial. 
+Analizando los Resultados
+-------------------------
 
-### What results can I expect? 
-It depends. There are many metrics that can be drawn from energy simulations, each targeted at assessing a particular aspect of the building's performance.
+A medida que analizamos los resultados, evaluaremos si éstos son razonables e identificaremos cuáles factores contribuyen más al uso de energía de nuestro edificio. Una vez que la simulación y el análisis han sido completados, estableceremos un ciclo completo de retroalimentación por medio del cual podemos empezar a alterar el diseño y evaluar el impacto de estas modificaciones en el desempeño.
 
-![list of metrics](https://user-images.githubusercontent.com/44324576/51490305-2e01e500-1dab-11e9-924c-90c3c64b662b.png)
+¿Por Qué Crear un Modelo Energético en Primer Lugar?
+----------------------------------------------------
 
-The most frequently used result is the Energy Balance Diagram, which tracks energy moving into and out of a building. This is fundamental to the first law of Thermodynamics, which states that Energy can never be created or destroyed. Heat entering the building might include heat from people, heat from computers/appliances, heat from light bulbs, solar heat through windows, and heat from heating systems like radiators. Heat losses might be the result of conduction through the envelope, cool air seeping through walls, and through deliberate ventilation. These are tallied in a balance sheet:
+1. Para informar el diseño
+2. Anticipar el uso de energía
+3. Respardar con argumentos convincentes ideas de diseño
+4. Desarrollar una intuición constructiva
+5. Realizar análisis de sensitividad
+6. Calcular periodos de retorno de inversión para medidas de conservación de energía (MCEs)
+7. Cumplir con códigos y normatividad de edificación
+8. Validar el cumplimiento con certificaciones de terceros, como LEED, BREAM o DGNB
 
-![001_energy_balance](https://user-images.githubusercontent.com/44324576/49155416-2c6fef80-f31b-11e8-88c3-f52a9aa72e7b.JPG)
+Esta guía es suficiente para cumplir con los primeros cinco objetivos, pero los detalles específicos para calcular periodos de retorno de inversión y para crear modelos de validación normativa, se encuentran fuera del alcance de este tutorial.
 
-### Note on daylighting
-EnergyPlus based simulations do account for specific geometry, and for the movement of
-the sun. However, if you are interested in daylighting simulations that return specific
-lighting levels then you are in the wrong place. These simulations can also be run using
-Honeybee, however those calculations require the Radiance ray-tracing engine and are not
-covered in this guide. There are plans for a wiki guide to daylighting, but as of Jan
-2019 it has not yet been written.
+¿Qué Resultados Puedo Esperar?
+------------------------------
+
+Depende. Existen múltiples métricas que pueden ser extraídas de una simulación energética, cada una refiriéndose a aspectos específicos del desempeño energético de un edificio.
+
+![alt text](https://user-images.githubusercontent.com/44324576/51490305-2e01e500-1dab-11e9-924c-90c3c64b662b.png "The World of Metrics")
+
+El resultado más frecuentemente utilizado es el Diagrama de Balance de Energía, el cual representa la energía moviéndose desde y hacia el edificio. Esto es fundamental para la Primera Ley de la Termodinámica, la cual establece que la energía no puede ser creada ni destruida. El calor que se desplaza en un edificio puede incluir el calor generado por las personas, calor disipado por equipo de cómputo o de procesos, calor proveniente de bombillas incandescentes, calor solar a través de las ventanas y calor proveniente de sistemas de climatización artificial. Las pérdidas de calor pueden ser resultado de la conducción a través de la envolvente, aire frío filtrándose por las paredes o siendo inyectado por sistemas de ventilación. Todos estos mecanismos de transmisión de calor son contabilizados en un diagrama de balance:
+
+![alt text](https://user-images.githubusercontent.com/44324576/49155416-2c6fef80-f31b-11e8-88c3-f52a9aa72e7b.JPG "Energy Balances")
+
+Nota Acerca de la Iluminación Natural
+-------------------------------------
+
+Las simulaciones energéticas basadas en EnergyPlus toman en cuenta la geometría específica de un edificio, así como el movimiento aparente del sol. No obstante, si estás interesado en simulaciones de iluminación natural que arrojen niveles específicos de iluminación interior, entonces es necesario buscar otras opciones. Este tipo de simulaciones pueden ser ejecutadas utilizando Honeybee, pero para llevarlas a cabo es necesario utilizar el motor de cálculo Radiance, el cual no está incluido en esta guía. Existen planes para desarrollar una guía wiki para iluminación natural, pero hasta Enero de 2019, ésta aún no ha sido desarrollada.
