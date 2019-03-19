@@ -1,7 +1,3 @@
-_Contributors_:
-<a href="https://github.com/alexandermatthias" title="Alexander Matthias Jacobson"><img src="https://github.com/alexandermatthias.png" height="24"></a>
-# 
-
 # Honeybee Wiki Home
 
 Welcome to the Official Honeybee Wiki, for guides to energy modeling using Honeybee. 
