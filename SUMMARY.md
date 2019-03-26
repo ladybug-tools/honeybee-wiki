@@ -5,15 +5,15 @@
 * Introducción
     * [Intro I - Instalando Honeybee](Introducción/Intro-I.md)
 
-    * [Intro II - La Interfaz de Grasshopper](Intro-II.md)
+    * [Intro II - La Interfaz de Grasshopper](Introducción/Intro-II.md)
 
-    * [Intro III - La Interfaz de Honeybee](Intro-III.md)
+    * [Intro III - La Interfaz de Honeybee](Introducción/Intro-III.md)
 
-    * [Intro IV - EnergyPlus Modeling Assumptions](Intro-IV.md)
+    * [Intro IV - Supuestos de Modelado Energético](Introducción/Intro-IV.md)
 
-    * [Intro V - Conventions and Code Hygiene](Intro-V.md)
+    * [Intro V - Convenciones e Higiene para Escritura de Código](Introducción/Intro-V.md)
 
-    * [Intro VI - Contributing to Honeybee Wiki!](Intro-VI.md)
+    * [Intro VI - Contribuciones a la Wiki de Honeybee](Introducción/Intro-VI.md)
 
 * [Single Zone Model Home](Single-Zone-Model.md)
 
