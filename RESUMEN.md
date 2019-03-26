@@ -22,7 +22,7 @@
 
     * [Paso 01 - Asignar Propiedades a las Zonas](Modelo_de_Zona_Unitaria/MZU_Paso01.md)
 
-    * [Paso 02 - Ajustes de la Simulación]Modelo_de_Zona_Unitaria/MZU_Paso01.md)
+    * [Paso 02 - Ajustes de la Simulación](Modelo_de_Zona_Unitaria/MZU_Paso01.md)
 
     * [Paso 03 - Corriendo el Modelo](Modelo_de_Zona_Unitaria/MZU_Paso01.md)
 
