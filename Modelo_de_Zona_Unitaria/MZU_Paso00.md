@@ -1,4 +1,4 @@
-Paso 0 - Modelando la Geometría de la Zona
+Paso 00 - Modelando la Geometría de la Zona
 ==========================================
 
 El motor de cálculo EnergyPlus posee convenciones preestablecidas para la creación de la geometría de una zona. Esta sección muestra cómo caracterizan una casa unifamiliar utilizando una sola zona, así como la manera de describir la misma casa usando un método más elaborado empleando múltiples zonas. La primera sección se enfoca en crear la geometría de la zona, seguida de notas adicionales que son requeridas para crear modelos con múltiples zonas.
