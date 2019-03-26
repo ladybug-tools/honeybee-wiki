@@ -47,6 +47,6 @@
 
 
 * [Tópicos](Topics.md)
+    * [Horarios Personalizados](Custom-Schedules.md)
 
-    *[Custom Schedules](Custom-Schedules.md)
 
