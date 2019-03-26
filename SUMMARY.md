@@ -3,11 +3,11 @@
 * [Inicio Wiki de Honeybee](README.md)
 
 * Introducción
-    * [Intro I - Installing Honeybee](Intro-I.md)
+    * [Intro I - Instalando Honeybee](Intro-I.md)
 
-    * [Intro II - Grasshopper Interface](Intro-II.md)
+    * [Intro II - La Interfaz de Grasshopper](Intro-II.md)
 
-    * [Intro III - Honeybee Interface](Intro-III.md)
+    * [Intro III - La Interfaz de Honeybee](Intro-III.md)
 
     * [Intro IV - EnergyPlus Modeling Assumptions](Intro-IV.md)
 
