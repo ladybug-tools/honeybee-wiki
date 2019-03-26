@@ -3,7 +3,7 @@
 * [Inicio Wiki de Honeybee](README.md)
 
 * Introducción
-    * [Intro I - Instalando Honeybee](Intro-I.md)
+    * [Intro I - Instalando Honeybee](Introducción/Intro-I.md)
 
     * [Intro II - La Interfaz de Grasshopper](Intro-II.md)
 
