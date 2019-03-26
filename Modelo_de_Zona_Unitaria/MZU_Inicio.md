@@ -20,6 +20,6 @@ Contenidos del tutorial
 
 [Paso 3 - Corriendo el Modelo]
 
-[Paso 4 - Visualizar los Resultados]
+[Paso 4 - Visualización de Resultados]
 
 [paso 5 - Iterando para Mejorar el Diseño]
