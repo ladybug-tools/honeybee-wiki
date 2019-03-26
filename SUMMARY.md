@@ -1,8 +1,8 @@
-# Table of Contents
+# Tabla de Contenidos
 
-* [Honeybee Wiki Home](README.md)
+* [Inicio Wiki de Honeybee](README.md)
 
-* Intro
+* Introducción
     * [Intro I - Installing Honeybee](Intro-I.md)
 
     * [Intro II - Grasshopper Interface](Intro-II.md)
