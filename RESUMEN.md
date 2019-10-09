@@ -2,7 +2,7 @@
 
 * [Inicio Wiki de Honeybee](README.md)
 
-* Introducción
+* 1.Introducción
     * [Intro I - Instalando Honeybee](Introducción/Intro-I.md)
 
     * [Intro II - La Interfaz de Grasshopper](Introducción/Intro-II.md)
@@ -16,7 +16,7 @@
     * [Intro VI - Contribuciones a la Wiki de Honeybee](Introducción/Intro-VI.md)
     
 
-* [Modelo de Zona Unitaria](Modelo_de_Zona_Unitaria/MZU_Inicio.md)
+* 2.[Modelo de Zona Unitaria](Modelo_de_Zona_Unitaria/MZU_Inicio.md)
 
     * [Paso 00 - Modelando la Geometría de la Zona](Modelo_de_Zona_Unitaria/MZU_Paso00.md)
 
@@ -31,7 +31,7 @@
     * [Paso 05 - Iteraciones para Mejorar el Diseño](Modelo_de_Zona_Unitaria/MZU_Paso01.md)
 
 
-* [Comparando Estrategias Pasivas](Compare-Passive-Strategies.md)
+* 3.[Comparando Estrategias Pasivas](Compare-Passive-Strategies.md)
 
     * [Pasivas 0 - Modelos de Confort](Comfort-Models.md)
 
@@ -45,8 +45,9 @@
 
     * [Pasivas 5 - Horarios - Ventilación Nocturna](Schedules-‐-Night-Flushing-Schedule.md)
 
+* 4.[Iluminación Natural]
 
-* [Tópicos](Topics.md)
+* 5.[Tópicos](Topics.md)
     * [Horarios Personalizados](Custom-Schedules.md)
 
 
