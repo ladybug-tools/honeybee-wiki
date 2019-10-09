@@ -1,25 +1,6 @@
-Modelo de Zona Unitaria
+Iluminación Natural
 =======================
 
-Bienvenido a este turorial donde aprenderás a usar Honeybee para crear un modelo energético con una sola zona unitaria. Este tutorial asume que ya sabes trabajar en Rhino y conoces los fundamentos de Grasshopper. Si eres completamente nuevo en Grasshopper, empieza en [intro II - Grasshopper Interface](https://github.com/mostaphaRoudsari/honeybee/wiki/Intro-II-%E2%80%90-Grasshopper-Interface) donde encontrarás conceptos importantes que son necesarios para seguir esta guía.
+Se ha creado este archivo para que sirva como punto de partida para los contenidos que el equipo de HoneyBee en Español considere apropiados en este módulo. Es necesario ya sea crear un nuevo archivo de introducción a este tema, o bien sobreescribir este archivo para incluir una descripción de los contenidos.
 
-En este tutorial, crearemos el modelo de una casa unifamiliar ubicada en Van Nuys, California que se muestra más abajo. También puedes encontrar la liga de descarga para el archivo de ejemplo.
-
-**Descarga el archivo de ejemplo para el** [Modelo de Zona Unitaria en Hydra.](http://hydrashare.github.io/hydra/viewer?owner=alexandermatthias&fork=hydra&id=SingleZoneModel_00_EnergyBalance&slide=0&scale=1&offset=0,0)
-
-![alt text](https://user-images.githubusercontent.com/44324576/53011852-af4ba680-3441-11e9-9cae-97986451a3e3.jpg)
-
-Contenidos del tutorial
------------------------
-
-[Paso 0 - Modelando la Geometría de la Zona]
-
-[Paso 1 - Asignar Propiedades a las Zonas]
-
-[Paso 2 - Preparando la Simulación]
-
-[Paso 3 - Corriendo el Modelo]
-
-[Paso 4 - Visualización de Resultados]
-
-[paso 5 - Iterando para Mejorar el Diseño]
+Puede utilizarse como punto de partida el archivo Topics.md que se encuentra en la Wiki original en inglés.
