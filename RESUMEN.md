@@ -45,7 +45,7 @@
 
     * [Pasivas 5 - Horarios - Ventilación Nocturna](Schedules-‐-Night-Flushing-Schedule.md)
 
-* 4.[Iluminación Natural]
+* 4.Iluminación Natural
 
 * 5.[Tópicos](Topics.md)
     * [Horarios Personalizados](Custom-Schedules.md)
