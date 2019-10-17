@@ -20,3 +20,4 @@ Tomar en cuenta que cada una de las formas de ventilación funciona como un swit
 
 **4.02** Coloque su mouse por encima de la terminal _naturalVentilationType para leer más. Como puede observar, estamos modelando ventilación de cara única, la cual es como abrir una sola ventana para un cuarto. Esta es distinta de la ventilación cruzada, la cual ocurre cuando existe una ventana abierta en dos lados opuestos de un cuarto con brisa pasando a través de ellas. 
 
+![alt text](https://user-images.githubusercontent.com/44324576/52435631-a1795580-2b12-11e9-9fd8-ca989490c835.jpg)
