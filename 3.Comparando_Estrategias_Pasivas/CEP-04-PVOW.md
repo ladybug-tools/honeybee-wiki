@@ -1,1 +1,0 @@
-#Ventilación - Ventanas Abiertas
