@@ -15,3 +15,8 @@ A pesar de ser una pequeña sección del Diagrama de Balance de Energía en este
 3.02 Asignar la densidad de iluminación es relativamente simple, solo se requiere conectar el panel con valor a 5.9 a la terminal lightingDensityPerArea. Como se puede leer del componente por sí mismo, este valor es medido en W/m2 y los valores típicos oscilan entre 3 W/m2 para Lámparas LED eficientes, a 15 W/m2 para bombillas incandescentes.
 
 ![alt text](https://user-images.githubusercontent.com/44324576/52430239-f367ae80-2b05-11e9-83dc-b768cfd81401.png)
+
+3.03 Comparando este cambio con la información previa del Diagrama de Balance de Energía podemos ver el impacto al instalar sistemas de iluminación más eficientes.
+
+![alt text](https://user-images.githubusercontent.com/44324576/52430996-9a007f00-2b07-11e9-8b7a-aca29ff9e91f.gif)
+
