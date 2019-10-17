@@ -16,7 +16,7 @@ En esta sección se muestra un ejemplo simple sobre cómo indicar la ventilació
   
   ![alt text](https://user-images.githubusercontent.com/44324576/52433831-47769100-2b0e-11e9-90d8-bb75513e89b4.png)
 
-Tomar en cuenta que cada una de las formas de ventilación funciona como un switch on-off. Esto es particularmente importante para entender en lo relacionado a la dirección de viento debido a que EnergyPlus no hace ajustes de viento bloqueado por el contexto a los alrededores, ni ajusta la cantidad de ventilación basada en que tan directa una ventana encara el viento.
+* Tomar en cuenta que cada una de las formas de ventilación funciona como un switch on-off. Esto es particularmente importante para entender en lo relacionado a la dirección de viento debido a que EnergyPlus no hace ajustes de viento bloqueado por el contexto a los alrededores, ni ajusta la cantidad de ventilación basada en que tan directa una ventana encara el viento. *
 
 **4.02** Coloque su mouse por encima de la terminal _naturalVentilationType para leer más. Como puede observar, estamos modelando ventilación de cara única, la cual es como abrir una sola ventana para un cuarto. Esta es distinta de la ventilación cruzada, la cual ocurre cuando existe una ventana abierta en dos lados opuestos de un cuarto con brisa pasando a través de ellas. 
 
