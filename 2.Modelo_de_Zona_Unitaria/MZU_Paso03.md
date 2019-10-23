@@ -19,4 +19,5 @@ Al inspeccionarlo de cerca, observamos que en este paso se reciben los datos de 
 
 *La relación entre el componente OpenStudio y el anterior componente EnergyPlus proviene del desarrollo de Honeybee de manera más general, como se describe en los siguientes diagramsa. OpenStudio funciona como un "hub" o nodo concetrador, entre Honeybee y EnergyPlus, lo que expande el conjunto de funcionalidades y características más allá de aquellas disponibles únicamente en EnergyPlus.
 
+![alt text](https://user-images.githubusercontent.com/44324576/51989233-e5cb7c80-24a6-11e9-8762-4f506e842115.JPG)
 ![alt text](https://user-images.githubusercontent.com/44324576/51989236-e6fca980-24a6-11e9-83a8-413f623443b3.JPG)
