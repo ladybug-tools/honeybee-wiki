@@ -21,3 +21,27 @@ Al inspeccionarlo de cerca, observamos que en este paso se reciben los datos de 
 
 ![alt text](https://user-images.githubusercontent.com/44324576/51989233-e5cb7c80-24a6-11e9-8762-4f506e842115.JPG)
 ![alt text](https://user-images.githubusercontent.com/44324576/51989236-e6fca980-24a6-11e9-83a8-413f623443b3.JPG)
+
+Paso a paso
+-----------
+
+**3.01** Lo primero que hay que hacer es conectar el archivo climático EPW del paso 2 al componente "Honeybee_Export to OpenStudio".
+
+![alt text](https://user-images.githubusercontent.com/44324576/49255095-48fb4d00-f42b-11e8-9c1f-9e8a38c34bdf.jpg)
+
+**3.02** A continuación, conectamos las zonas que tienen ventanas del paso 1.
+
+![alt text](https://user-images.githubusercontent.com/44324576/49255096-48fb4d00-f42b-11e8-8616-ee7069e71280.jpg)
+
+**3.03** Conectamos la lista de datos de salida deseados del paso 2.
+
+![alt text](https://user-images.githubusercontent.com/44324576/49255097-48fb4d00-f42b-11e8-81bd-673f3fe42ae1.jpg)
+
+**3.04** Necesitaremos un interruptor de dos posiciones booleano para correr la simulación, pero todavía no debemos cambiarlo a "verdadero". Utilizaremos este mismo interruptor booleano para indicarle a Honeybee que desamos guardar una copia del archivo OSM que contenga los parámetros de nuestra simulación. Debemos notar que este interruptor está conectado a las terminales en el diagrama más abajo:
+
+![alt text](https://user-images.githubusercontent.com/44324576/49255099-48fb4d00-f42b-11e8-8d2d-d30d6dd81454.jpg)
+
+**3.05** Ahora especificaremos un nombre para el archivo de datos de salida de la simulación. Esto hace posible que podamos guardar los datos de salida en lugar de sobreescribir a cada momento. Usaremos un panel para esto y llamaremos a nuestro archivo "LAHouse".
+
+
+![alt text](https://user-images.githubusercontent.com/44324576/49256165-6bdb3080-f42e-11e8-8689-ef2a619ef127.jpg)
