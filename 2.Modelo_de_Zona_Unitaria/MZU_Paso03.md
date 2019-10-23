@@ -1,0 +1,1 @@
+El siguiente paso del proceso es recolectar la información que hemos ingresado hasta ahora para correr nuestra primera simulación energética. Nos concentraremos en el paso 3, resaltado en rojo más abajo:
