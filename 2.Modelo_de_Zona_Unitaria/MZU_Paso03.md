@@ -13,3 +13,10 @@ Al inspeccionarlo de cerca, observamos que en este paso se reciben los datos de 
 
 ![alt text](https://user-images.githubusercontent.com/44324576/49255094-48fb4d00-f42b-11e8-8688-ae2a2edd2151.jpg)
 
+*Nota acerca de las versiones: Es importante no confundir el componente "Honeybee_Export to OpenStudio" con el anterior "Honeybee_Run Energy Simulation". El componente OpenStudio realiza las mismas funciones que el componente anterior y más. El anterior componente ha sido mantenido en las librerías de Honeybee solamente con la finalidad de permitir a los usuarios continuar usando scripts previamente escritos.*
+
+![alt text](https://user-images.githubusercontent.com/44324576/49256977-0fc5db80-f431-11e8-8448-498c69de5edd.png)
+
+*La relación entre el componente OpenStudio y el anterior componente EnergyPlus proviene del desarrollo de Honeybee de manera más general, como se describe en los siguientes diagramsa. OpenStudio funciona como un "hub" o nodo concetrador, entre Honeybee y EnergyPlus, lo que expande el conjunto de funcionalidades y características más allá de aquellas disponibles únicamente en EnergyPlus.
+
+![alt text](https://user-images.githubusercontent.com/44324576/51989236-e6fca980-24a6-11e9-83a8-413f623443b3.JPG)
