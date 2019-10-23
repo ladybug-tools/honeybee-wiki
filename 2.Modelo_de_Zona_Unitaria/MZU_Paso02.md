@@ -29,6 +29,6 @@ Arrastra un comppoonente "Honeybee-10-Honeybee_Generate EP Output" al lienzo. Es
 
 ![alt text](https://user-images.githubusercontent.com/44324576/49236209-eccd0480-f3fb-11e8-80e0-461e95f5b30f.jpg)
 
-*Es importante notar que la lista de tipos de datos disponibles en el componente "Honeybee_Generate EP Output" solamente incluye los datos de salida más comunmente utilizados. La lista completa de datos de salida disponibles en OpenStudio puede ser consultada aquí: https://bigladdersoftware.com/epx/docs/8-3/input-output-reference/index.html. Alternativamente, el componente "Honeybee-10-Honeybee_Read Results Dictionary" puede proporcionar una lista de todos los datos de salida una vez que una simulación haya sido ejecutada.
+*Es importante notar que la lista de tipos de datos disponibles en el componente "Honeybee_Generate EP Output" solamente incluye los datos de salida más comunmente utilizados. La lista completa de datos de salida disponibles en OpenStudio puede ser consultada aquí: https://bigladdersoftware.com/epx/docs/8-3/input-output-reference/index.html. Alternativamente, el componente "Honeybee-10-Honeybee_Read Results Dictionary" puede proporcionar una lista de todos los datos de salida una vez que una simulación haya sido ejecutada.*
 
 La preparación inicial con los datos climaticos y la solicitud de los datos de salida ahora está completa, procedamos ahora a correr nuestra simulación.
