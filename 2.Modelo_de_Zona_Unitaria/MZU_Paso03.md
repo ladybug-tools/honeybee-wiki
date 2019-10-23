@@ -43,5 +43,18 @@ Paso a paso
 
 **3.05** Ahora especificaremos un nombre para el archivo de datos de salida de la simulación. Esto hace posible que podamos guardar los datos de salida en lugar de sobreescribir a cada momento. Usaremos un panel para esto y llamaremos a nuestro archivo "LAHouse".
 
-
 ![alt text](https://user-images.githubusercontent.com/44324576/49256165-6bdb3080-f42e-11e8-8689-ef2a619ef127.jpg)
+
+**3.06** Finalmente, cmabiaremos el interruptor booleano para correr la simulación. Esto puede tomar varios minutos, dependiendo de la capacidad de procesamiento de tu computadora u ordenador.
+
+![alt text](https://user-images.githubusercontent.com/44324576/49255100-4993e380-f42b-11e8-8d05-bcab2c6967da.jpg)
+
+**3.07** Como lo prometimos en el paso 1, ahora puedes ver cuáles son el conjunto de instrucciones y ajustes que Honeybee ha enviado a OpenStudio. Estos están contenidos en el archivo OSM, el cuál puedes localizar al conectar un panel al nodo de salida "osmFileAddress".
+
+![alt text](https://user-images.githubusercontent.com/44324576/49258081-7dbfd200-f434-11e8-8833-1bc4e751f845.jpg)
+
+**3.08** A continuación, presentamos una porción del archivo OSM. Es importante notar que Honeybee ha autocompletado muchos de los campos con valores por defecto. Por ejemplo, nosotros no modificamos el periodo de análisis, pero el campo "Begin Month" ha sido definido como 1 (enero), y el campo "End Month" aparece en 12 (diciembre). Si abres este archivo en tu computadora u ordenador, notarás que es bastante largo, pero esto te da una idea del proceso.
+
+![alt text](https://user-images.githubusercontent.com/44324576/49251487-befab680-f421-11e8-8553-f94d9c21fa92.JPG)
+
+No obstante, nuestra preocupación principal es el archivo de resultados, el cual es arrojado como un documento de valores separados coma. Este formato es comunmente empleado en hojas de cálculo y a en la siguiente sección veremos cómo es el proceso de recorrer estos datos para obtener la información que requerimos para hacer un diagrama de balance de calor.
