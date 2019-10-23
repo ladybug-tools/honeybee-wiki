@@ -9,6 +9,9 @@ Al inspeccionarlo de cerca, observamos que en este paso se reciben los datos de 
 
 ![alt text](https://user-images.githubusercontent.com/44324576/49238365-8d252800-f400-11e8-8545-6dc35671295c.png)
 
+Paso a paso
+-----------
+
 **3.00** El componente clave en este proceso es el componente "Honeybee-10-Honeybee_Run Energy Simulation" el cual, recolecta todos los datos de entrada que hemos preparado, completa los campos vacíos con datos por defecto y prepara una serie de instrucciones para el motor de simulación OpenStudio. Este conjunto de instrucciones es guardado en forma de un archivo OSM. Después de haber corrido la simulación, revisaremos cómo se ve un archivo OSM.
 
 ![alt text](https://user-images.githubusercontent.com/44324576/49255094-48fb4d00-f42b-11e8-8688-ae2a2edd2151.jpg)
@@ -21,9 +24,6 @@ Al inspeccionarlo de cerca, observamos que en este paso se reciben los datos de 
 
 ![alt text](https://user-images.githubusercontent.com/44324576/51989233-e5cb7c80-24a6-11e9-8762-4f506e842115.JPG)
 ![alt text](https://user-images.githubusercontent.com/44324576/51989236-e6fca980-24a6-11e9-83a8-413f623443b3.JPG)
-
-Paso a paso
------------
 
 **3.01** Lo primero que hay que hacer es conectar el archivo climático EPW del paso 2 al componente "Honeybee_Export to OpenStudio".
 
