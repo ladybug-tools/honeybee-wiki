@@ -32,6 +32,6 @@
 
 ![alt text](https://user-images.githubusercontent.com/44324576/52489416-86feb500-2bc2-11e9-8376-c38e9e6b0ce2.jpg)
 
-**5.08** Esto desplegará un menu de opciones como el mostrado debajo, donde podrá cambiar los números de genes a 24 y declarar valores mínimo y máximo de 0 y 1 respectivamente.
+**5.08** Esto desplegará un menú de opciones como el mostrado debajo, donde podrá cambiar los números de genes a 24 y declarar valores mínimo y máximo de 0 y 1 respectivamente.
 
 ![alt text](https://user-images.githubusercontent.com/44324576/52489417-86feb500-2bc2-11e9-8515-01e73ffbff50.jpg)
