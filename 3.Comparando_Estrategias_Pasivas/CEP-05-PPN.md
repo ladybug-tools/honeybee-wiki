@@ -16,6 +16,12 @@
 
 ![alt text](https://user-images.githubusercontent.com/44324576/52489019-81549f80-2bc1-11e9-9ede-1fcc8113f6d6.jpg)
 
-**5.04** Si se coloca el *mouse* por encima de la terminal de ventilación natural se podrá observar que el tipo '3' corresponde a ventilación por abanico. Por lo tanto, esta estrategia asume el flujo de aire es hecho por un ventilador eléctrico. Esta forma de ventilación es más confiable que simplemente abriendo las ventanas, pero hay un costo asociado al uso del ventilador por sí mismo. La simulación evaluará solamente el potencial de ganancia térmica al aplicar esta estrategia, existe además otra capa de complejidad relacionada con la modelación del consumo de electricidad del abanico.
+**5.04** Si se coloca el *mouse* por encima de la terminal de ventilación natural se podrá observar que el tipo '3' corresponde a ventilación de abanico. Por lo tanto, esta estrategia asume el flujo de aire es hecho por un ventilador eléctrico. Esta forma de ventilación es más confiable que simplemente abriendo las ventanas, pero hay un costo asociado al uso del ventilador por sí mismo. La simulación evaluará solamente el potencial de ganancia térmica al aplicar esta estrategi pero existe además otra capa de complejidad relacionada con la modelación del consumo de electricidad del abanico.
 
 ![alt text](https://user-images.githubusercontent.com/44324576/52489783-73a01980-2bc3-11e9-9e9c-626146fb6e9d.jpg)
+
+**5.05** El siguiente paso es declarar en Energy+ cuando queremos encender el ventilador, esto requiere un programa de uso horario. Existen diferentes tipos de agendas en Honeybee, las cuales son útiles de forma anual, estacional, semanal y diaria. En este caso crearemos un programa personalizado que se repite exactamente igual diariamente durante todo el año, y lo usaremos para modificar el tamaño de las aperturas de las ventanas por las que el aire soplará. Por ahora, se iniciará con el componente Honeybee_Constant Schedule.
+
+![alt text](https://user-images.githubusercontent.com/44324576/52489020-81ed3600-2bc1-11e9-9027-adee45d27454.jpg)
+
+**5.06** El siguiente paso es asignar el valor que representa el tamaño de la apertura del flujo de aire en cada hora del día. Esto es hecho usando el componente Gene Pool.
