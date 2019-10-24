@@ -46,11 +46,11 @@ En esta sección se muestra un ejemplo simple sobre cómo indicar la ventilació
 
 ![alt text](https://user-images.githubusercontent.com/44324576/52437724-e2279d80-2b17-11e9-9204-3482033d707a.JPG)
 
-**4.07** Finalmente queremos evaluar realmente estas estrategias en términos de su impacto en el confort del espacio interior. Para hacer esto necesitaremos usar el modelo de comfort adaptativo y graficar los resultados. Esto se encuentra localizado cerca del final de la definición:
+**4.07** Finalmente queremos evaluar realmente estas estrategias en términos de su impacto en el confort del espacio interior. Para hacer esto necesitaremos usar el modelo de confort adaptativo y graficar los resultados. Esto se encuentra localizado cerca del final de la definición:
 
 ![alt text](https://user-images.githubusercontent.com/44324576/52441180-52d2b800-2b20-11e9-85a7-2654e114c562.png)
 
-**4.08** Acercándonos podemos observar que el componente Ladybug_Adaptive Comfort requiere de diversas fuentes de datos. La temperatura de bulbo seco y la temperatura media radiante son resultados de nuestra simulación. También se requiere la temperatura exterior debido a que como se explicó en la sección introductoria de los modelos de confort, el confort adaptativo está basado en la experiencia de los ocupantes y por lo tanto para su cálculo es necesario de un registro de la temperatura exterior.
+**4.08** Acercándonos podemos observar que el componente Ladybug_Adaptive Comfort requiere de diversas fuentes de datos. La temperatura de bulbo seco y la temperatura media radiante son resultados de nuestra simulación. También se requiere la temperatura exterior debido a que, como se explicó en la sección introductoria de los modelos de confort, el confort adaptativo está basado en la experiencia inmediata de los ocupantes y por lo tanto para su cálculo es necesario de un registro de la temperatura exterior.
 
 ![alt text](https://user-images.githubusercontent.com/44324576/52441428-cecd0000-2b20-11e9-9c28-60dd9e8ea861.png)
 
