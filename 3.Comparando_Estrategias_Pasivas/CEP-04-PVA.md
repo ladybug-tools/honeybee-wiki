@@ -38,7 +38,7 @@ En esta sección se muestra un ejemplo simple sobre cómo indicar la ventilació
 
 ![alt text](https://user-images.githubusercontent.com/44324576/52436707-3f6e1f80-2b15-11e9-8004-bf9d1a382078.gif)
 
-**4.06** Esta gráfica puede ser creada usando los componentes de Ladybug. Prestar atención especial al enunciado condicional de entrada para la Gráfica Ladybug_3D, y se podra crear igualmente una gráfica de gradiente en negro al conectar con dos *black swatches* en la entrada customColors del componente Ladybug_Legend Parameters. Más ejemplos sobre personalización en la visualización de datos puede encontrarse aquí:http://hydrashare.github.io/hydra/viewer?owner=mostaphaRoudsari&fork=hydra_1&id=Customize_weather_data_visualization_with_3D_Chart&slide=0&scale=1&offset=0,0
+**4.06** Esta gráfica puede ser creada usando los componentes de Ladybug. Prestar atención especial al enunciado condicional de entrada para la gráfica Ladybug_3D y podrá crear igualmente una gráfica de gradiente en negro al conectar con dos *black swatches* en la entrada customColors del componente Ladybug_Legend Parameters. Más ejemplos sobre personalización en la visualización de datos puede encontrarse aquí:http://hydrashare.github.io/hydra/viewer?owner=mostaphaRoudsari&fork=hydra_1&id=Customize_weather_data_visualization_with_3D_Chart&slide=0&scale=1&offset=0,0
 
 ![alt text](https://user-images.githubusercontent.com/44324576/52436944-e783e880-2b15-11e9-8cc5-8ea4f309681c.png)
 
@@ -54,7 +54,7 @@ En esta sección se muestra un ejemplo simple sobre cómo indicar la ventilació
 
 ![alt text](https://user-images.githubusercontent.com/44324576/52441428-cecd0000-2b20-11e9-9c28-60dd9e8ea861.png)
 
-**4.09** Aquí se muestran dos gráficos con resultados, los cuáles comparan un escenario inicial sin aplicar ninguna de las estrategias con un escenario aplicando ventilación natural solamente.
+**4.09** Aquí se muestran dos gráficos con resultados, los cuáles comparan un escenario inicial sin aplicar ninguna de las estrategias con un escenario aplicando solamente ventilación natural.
 
 ![alt text](https://user-images.githubusercontent.com/44324576/52441922-418aab00-2b22-11e9-858f-c2ad86d5598e.gif)
 
