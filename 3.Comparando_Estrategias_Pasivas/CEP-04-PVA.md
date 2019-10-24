@@ -6,7 +6,7 @@ En esta sección se muestra un ejemplo simple sobre cómo indicar la ventilació
 
 ![alt text](https://user-images.githubusercontent.com/44324576/52432381-96222c00-2b0a-11e9-9107-22d6dc01e8b9.png)
 
-**4.01** Haciendo un acercamiento podemos observar que el componente de ventilación ofrece distintas opciones. Modelar ventilación es un proceso complejo pero EnergyPlus cuenta con diversas simplificaciones que no requieren mucho tiempo de cómputo. El punto clave es que es extremadamente importante asignar correctamente el tipo de ventilación. La ventilación natural que este componente modela es mayormente hecho para modelación de Zona Separada y en casos donde no existe flujo de aire considerable entre zonas. Específicamente este componente puede modelar algunos tipos comúnes de ventilación natural:
+**4.01** Haciendo un acercamiento podemos observar que el componente de ventilación ofrece distintas opciones. Modelar ventilación es un proceso complejo pero EnergyPlus cuenta con diversas simplificaciones que no requieren mucho tiempo de cómputo. El punto clave es que es extremadamente importante asignar correctamente el tipo de ventilación. La ventilación natural que este componente modela es mayormente hecho para modelación de Zona Unitaria y en casos donde no existe flujo de aire considerable entre zonas. Específicamente este componente puede modelar algunos tipos comúnes de ventilación natural:
 
   1. Ventilación de Cara-Única - ventilación impulsada por la diferencia de altura a lo largo de ventanas individuales colocadas sobre una sola cara del edificio.
   2. Ventilación Cruzada - ventilación impulsada por la diferencia de presión a lo largo de las ventanas colocadas en dos caras opuestas del edificio.
@@ -26,7 +26,7 @@ En esta sección se muestra un ejemplo simple sobre cómo indicar la ventilació
 
 ![alt text](https://user-images.githubusercontent.com/44324576/52435462-3465c000-2b12-11e9-98e4-19c909b93399.gif)
 
-*Tomar en cuenta que la energía removida de la zona por ventilación aparece como 'storage'. Esto es debido a que no se ha conectado aún la ventilación natural con el componente Honeybee_Construct Energy Balance del Modelo de Zona Separada original, ver debajo el componente en verde:*
+*Tomar en cuenta que la energía removida de la zona por ventilación aparece como 'storage'. Esto es debido a que no se ha conectado aún la ventilación natural con el componente Honeybee_Construct Energy Balance del Modelo de Zona Unitaria original, ver debajo el componente en verde:*
 
 ![alt text](https://user-images.githubusercontent.com/44324576/52437574-852be780-2b17-11e9-9432-f299c91472c9.jpg)
 
