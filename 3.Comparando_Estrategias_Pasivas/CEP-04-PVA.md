@@ -42,7 +42,7 @@ En esta sección se muestra un ejemplo simple sobre cómo indicar la ventilació
 
 ![alt text](https://user-images.githubusercontent.com/44324576/52436944-e783e880-2b15-11e9-8cc5-8ea4f309681c.png)
 
-*Tomar en cuenta que se han ocultado las conexiones de estos componentes en la vista general del diagrama, por limpieza y legibilidad. Para esto simplemente se hace click derecho en la terminal y seleccionar 'Hidden' de la lista desplegable*.
+*Tomar en cuenta que se han ocultado las conexiones de estos componentes en la vista general del diagrama, por limpieza y legibilidad. Para esto simplemente se debe hacer click derecho en la terminal y seleccionar 'Hidden' de la lista desplegable*.
 
 ![alt text](https://user-images.githubusercontent.com/44324576/52437724-e2279d80-2b17-11e9-9204-3482033d707a.JPG)
 
