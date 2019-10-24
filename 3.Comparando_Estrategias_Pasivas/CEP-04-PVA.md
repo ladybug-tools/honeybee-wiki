@@ -16,8 +16,33 @@ En esta sección se muestra un ejemplo simple sobre cómo indicar la ventilació
   
   ![alt text](https://user-images.githubusercontent.com/44324576/52433831-47769100-2b0e-11e9-90d8-bb75513e89b4.png)
 
-*Tomar en cuenta que cada una de las formas de ventilación funciona como un switch on-off. Esto es particularmente importante en lo relacionado a la dirección de viento debido a que EnergyPlus no hace ajustes de viento bloqueado por el contexto a los alrededores, ni ajusta la cantidad de ventilación basada en la orientación de una ventana con respecto a la dirección del viento.* 
+*Tomar en cuenta que cada una de las formas de ventilación funciona como un switch on-off. Esto es particularmente importante en lo relacionado a la dirección de viento debido a que EnergyPlus no hace ajustes del viento bloqueado por el contexto en los alrededores, ni ajusta la cantidad de ventilación basada en la orientación de una ventana con respecto a la dirección del viento.* 
 
-**4.02** Coloque su mouse por encima de la terminal _naturalVentilationType para leer más. Como puede observar, estamos modelando Ventilación de Cara Única, la cual es como abrir una sola ventana para un cuarto. Esta es distinta de la ventilación cruzada, la cual ocurre cuando existe una ventana abierta en dos lados opuestos de un cuarto con brisa pasando a través de ellas. 
+**4.02** Coloque su mouse por encima de la terminal _naturalVentilationType para leer más. Como puede observar, estamos modelando Ventilación de Cara Única, lo cual es como abrir una sola ventana para un cuarto. Esta es distinta de la ventilación cruzada, la cual ocurre cuando existe una ventana abierta en dos lados opuestos de un cuarto con brisa pasando a través de ellas. 
 
 ![alt text](https://user-images.githubusercontent.com/44324576/52435631-a1795580-2b12-11e9-9fd8-ca989490c835.jpg)
+
+**4.03** Al comparar los Diagramas de Balance de Energía podemos observar que el efecto de abrir las ventanas es aparentemente nulo en la cantidad de energía que entra en el edificio. Este comentario esta relacionado más con la utilidad de usar Diagramas de Balance de Energía que con la efectividad del uso de ventilación natural. La ventilación natural no previene a la energía solar de entrar en la zona, esta solamente retira el calor una vez que esta ahí. Por lo tanto, el impacto de la ventilación natural aparece como el cambio del balance de la energía saliendo de la zona, en la mitad inferior del diagrama de balance de energía.
+
+![alt text](https://user-images.githubusercontent.com/44324576/52435462-3465c000-2b12-11e9-98e4-19c909b93399.gif)
+
+*Tomar en cuenta que la energía removida de la zona por ventilación aparece como 'storage'. Esto es debido a que no se ha conectado aún la ventilación natural con el componente Honeybee_Construct Energy Balance del Modelo de Zona Separada original, ver debajo el componente en verde:*
+
+![alt text](https://user-images.githubusercontent.com/44324576/52437574-852be780-2b17-11e9-9432-f299c91472c9.jpg)
+
+**4.04** La gráfica de temperaturas exteriores nos indica cuando esta esta ventilación natural esta realmente occurriendo. Para esto, usamos Ladybug en la visualización de las implicaciones al introducir temperaturas min/max visto en el paso **4.01**. Debajo se muestra una gráfica con todas las horas anuales. Los días se presentan en el eje horizontal y cada sección vertical representa 24 horas. La gráfica muestra la fluctuación de temperaturas en Enero y Diciembre.
+
+![alt text](https://user-images.githubusercontent.com/44324576/52436054-89560600-2b13-11e9-8087-304579af9e2b.jpg)
+
+**4.05** La siguiente gráfica es idéntica a la presentada arriba, con la excepción que esta muestra el año completo. La primer imagen muestra todas las horas del año con gradiente de colores basado en las temperaturas. La segunda imagen muestra solamente las horas en las que la temperatura exterior esta por encima de 12°C, y la imagen final expone solamente las horas en las que existe un potencial uso de ventilación natural basados en este criterio.
+
+![alt text](https://user-images.githubusercontent.com/44324576/52436707-3f6e1f80-2b15-11e9-8004-bf9d1a382078.gif)
+
+**4.06** Esta gráfica puede ser creada usando los componentes de Ladybug. Prestar atención especial al enunciado condicional de entrada para la Gráfica Ladybug_3D, y se podra crear igualmente una gráfica de gradiente en negro al conectar con dos *black swatches* en la entrada customColors del componente Ladybug_Legend Parameters. Más ejemplos sobre personalización en la visualización de datos puede encontrarse aquí:http://hydrashare.github.io/hydra/viewer?owner=mostaphaRoudsari&fork=hydra_1&id=Customize_weather_data_visualization_with_3D_Chart&slide=0&scale=1&offset=0,0
+
+![alt text](https://user-images.githubusercontent.com/44324576/52436944-e783e880-2b15-11e9-8cc5-8ea4f309681c.png)
+
+
+
+
+
