@@ -36,11 +36,11 @@
 
 ![alt text](https://user-images.githubusercontent.com/44324576/52489417-86feb500-2bc2-11e9-8515-01e73ffbff50.jpg)
 
-**5.09** Finalmente asignaremos el nombre del Programa de Uso. No se deben utilizar espacios en el nombre, esto es importante debido a que los Programas de Horario de Uso son manejadas de forma distinta de muchos otros tipos de datos en Grasshopper. Estos son guardados como archivos de texto, llamados archivos IDF, para ser usado a través de Grasshopper posteriormente. Por esta razón es que se observa la salida 'schedIFText'.
+**5.09** Finalmente asignaremos el nombre del Programa. No se deben utilizar espacios en el nombre, esto es importante debido a que los Programas de Horario de Uso son manejadas de forma distinta de muchos otros tipos de datos en Grasshopper. Estos son guardados como archivos de texto, llamados archivos IDF, para ser usados a través de Grasshopper posteriormente. Por esta razón es que se observa la salida 'schedIFText'.
 
 ![alt text](https://user-images.githubusercontent.com/44324576/52489023-81ed3600-2bc1-11e9-9d28-b5e2c7168992.jpg)
 
-**5.10** Se puede observar que Grasshopper únicamente translada el nombre del archivo IDF al conectarse un panel a la salida *schedule*.
+**5.10** Se puede observar que Grasshopper únicamente traslada el nombre del archivo IDF al conectarse un panel a la salida *schedule*.
 
 ![alt text](https://user-images.githubusercontent.com/44324576/52489024-81ed3600-2bc1-11e9-82a7-92b2bbda53af.jpg)
 
@@ -56,8 +56,16 @@
 
 ![alt text](https://user-images.githubusercontent.com/44324576/52487737-95e36880-2bbe-11e9-8f0d-b4f8883b2a92.gif)
 
-Esto concluye la sección comparativa de las estrategias pasivas. Esta sección tiene la intención de proveer un paso intermedio entre la modelación de Zona Unitaria y la modelación avanzada de multi-zonas. Hasta este punto deberán familiarizarse con los siguientes procesos:
+Esto concluye la sección comparativa de las estrategias pasivas. Esta sección tiene la intención de proveer un paso intermedio entre la modelación de Zona Unitaria y la modelación Avanzada de Multi-Zonas. Hasta este punto deberán estar familiarizados con los siguientes procesos:
 
+  * Añadir y remover capas de información/simulación a las Zonas de Honeybee.
+  * Especificar contexto de sombreado.
+  * Cambiar el desempeño de las especificaciones de ventanas.
+  * Cambiar las cargas de equipos específicas de una Zona de Honeybee.
+  * Introducir ventilación natural dentro de la zona.
+  * Crear y asignar programas de horario de uso de equipos.
+  
+  
 
 
 
