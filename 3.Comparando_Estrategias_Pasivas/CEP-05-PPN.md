@@ -35,3 +35,37 @@
 **5.08** Esto desplegará un menú de opciones como el mostrado debajo, donde podrá cambiar los números de genes a 24 y declarar valores mínimo y máximo de 0 y 1 respectivamente.
 
 ![alt text](https://user-images.githubusercontent.com/44324576/52489417-86feb500-2bc2-11e9-8515-01e73ffbff50.jpg)
+
+**5.09** Finalmente asignaremos el nombre del Programa de Uso. No se deben utilizar espacios en el nombre, esto es importante debido a que los Programas de Horario de Uso son manejadas de forma distinta de muchos otros tipos de datos en Grasshopper. Estos son guardados como archivos de texto, llamados archivos IDF, para ser usado a través de Grasshopper posteriormente. Por esta razón es que se observa la salida 'schedIFText'.
+
+![alt text](https://user-images.githubusercontent.com/44324576/52489023-81ed3600-2bc1-11e9-9d28-b5e2c7168992.jpg)
+
+**5.10** Se puede observar que Grasshopper únicamente translada el nombre del archivo IDF al conectarse un panel a la salida *schedule*.
+
+![alt text](https://user-images.githubusercontent.com/44324576/52489024-81ed3600-2bc1-11e9-82a7-92b2bbda53af.jpg)
+
+**5.11** Finalmente especificaremos el tamaño de las ventanas operables para la purga nocturna. Escribimos '1' con fines demostrativos, lo cual asume que el área de la ventana se abre completamente. En realidad esto representaría una ventana con bisagras que pueda girarse y abrirse completamente, opuesta a una ventana corrediza la cual no puede tener más del 50% de su área abierta.
+
+![alt text](https://user-images.githubusercontent.com/44324576/52489025-81ed3600-2bc1-11e9-8781-8c948a26dbcc.jpg)
+
+**5.12** Aquí se muestra el Diagrama de Balance de Energía resultante. Se puede notar que ahora todo el enfriamiento es atribuido a ventilación natural.
+
+![alt text](https://user-images.githubusercontent.com/44324576/52487702-764c4000-2bbe-11e9-825a-b94dcb93cb4f.jpg)
+
+**5.13** Revisitando la gráfica de confort creada en el paso 4 de la sección ventilación natural, hemos añadido ahora el impacto de la purga nocturna en el confort general. Se puede observar que se han disminuido considerablemente el número de horas en las que el inmueble esta muy caliente, pero ahora igualmente está muy frío para ser confortable durante una parte significativa del año.
+
+![alt text](https://user-images.githubusercontent.com/44324576/52487737-95e36880-2bbe-11e9-8f0d-b4f8883b2a92.gif)
+
+Esto concluye la sección comparativa de las estrategias pasivas. Esta sección tiene la intención de proveer un paso intermedio entre la modelación de Zona Unitaria y la modelación avanzada de multi-zonas. Hasta este punto deberán familiarizarse con los siguientes procesos:
+
+
+
+
+
+
+
+
+
+
+
+
