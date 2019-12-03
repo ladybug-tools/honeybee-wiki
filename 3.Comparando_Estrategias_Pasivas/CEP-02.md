@@ -26,6 +26,6 @@ _Una explicación completa del componente Ladybug_skyDome esta más allá de est
 ![003_contextshadingskydome](https://user-images.githubusercontent.com/44324576/52426407-358cf200-2afe-11e9-82fe-3ce4d4781fd5.jpg)
 
 
- **2.05** Si superponemos este diagrama en nuestro modelo, podemos ver que el dosel que protege el lado este de la casa es bastante efectivo, pero los lados sur y oeste de la casa quedan sin protección. Esta es la razón principal por la que las ventanas de alto rendimiento son más efectivas que el sombreado en el análisis anterior. También podemos ver que parte de la luz solar más intensa llega desde una altitud que es demasiado aguda para ser sombreada por los árboles.  
+ **2.05** Si superponemos este diagrama en nuestro modelo, podemos ver que el alero que protege el lado este de la casa es bastante efectivo, pero los lados sur y oeste de la casa quedan sin protección. Esta es la razón principal por la que las ventanas de alto rendimiento son más efectivas que el sombreado en el análisis anterior. También podemos ver que parte de la luz solar más intensa llega desde una altitud que es demasiado aguda para ser sombreada por los árboles.  
 ![003_contextshadingskydome_edit](https://user-images.githubusercontent.com/44324576/52424173-bb5a6e80-2af9-11e9-9460-a73456b6994a.jpg)
 
