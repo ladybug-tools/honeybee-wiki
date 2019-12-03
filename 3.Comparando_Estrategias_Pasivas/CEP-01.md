@@ -1,6 +1,6 @@
 Las elecciones de materiales tienen un gran impacto en el rendimiento energético. Esta sección ilustrará como Honeybee maneja los materiales modelando ventanas de alto rendimiento.
 
-**1.01** Aquí una descripción general de todos los módulos que agregaremos a lo largo del capítulo sobre Técnicas Pasivas. Se basa directamente en el modelo de zona única que creamos antes. A continuación, los elementos originales aparecen en grupos de color gris y los elementos nuevos aparecen en amarillo.
+**1.01** Aquí una descripción general de todos los módulos que agregaremos a lo largo del capítulo sobre Técnicas Pasivas. Se basa directamente en el modelo de zona única que creamos antes. A continuación, los elementos originales aparecen en grupos de color gris claro por debajo y los elementos nuevos aparecen en amarillo.
 
 ![gh_000_overview](https://user-images.githubusercontent.com/44324576/52227404-b6a27a00-28af-11e9-8839-6854e4e642e5.png)
 
