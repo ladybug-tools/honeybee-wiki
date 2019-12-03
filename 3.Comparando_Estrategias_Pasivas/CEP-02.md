@@ -2,7 +2,7 @@
 
 Hay varias formas de modelar la sombra en Honeybee. Para elementos estáticos, lo más fácil es simplemente modelar la geometría y cargarla en un Componente Context Surfaces EP de Honeybee.
 
-**2.00 - Revisión** El primero es simplemente dibujar geometría de contexto, como lo hicimos cuando agregamos árboles y elementos de sombreado al Modelo de Zona Única:
+**2.00 - Revisión** El primero es simplemente dibujar geometría, como lo hicimos cuando agregamos árboles y elementos de sombreado al Modelo de Zona Única:
 ![005_single zone_shade overlay](https://user-images.githubusercontent.com/44324576/52411432-17ae9580-2adc-11e9-9cc8-1f8f78b200c5.jpg)
 
 Conectaremos el componente de sombreado a nuestra definición existente aquí:
