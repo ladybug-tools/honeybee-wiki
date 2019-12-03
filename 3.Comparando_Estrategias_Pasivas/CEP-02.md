@@ -8,8 +8,7 @@ Hay varias formas de modelar la sombra en Honeybee. Para elementos estáticos, l
 Conectaremos el componente de sombreado a nuestra definición existente aquí:
 ![gh_03_overview_shade](https://user-images.githubusercontent.com/44324576/52431819-47c05d80-2b09-11e9-8d26-08c140421d9c.png)
 
-**2.01** Acercarnos, podemos ver que este es exactamente el mismo módulo que creamos al final del Modelo de Zona Única. Tenga en cuenta que estos pasos se explican más detalladamente 
-Zooming in, we can see that this is the exact same module we created at the end of the Single Zone Model. 
+**2.01** Al acercarnos, podemos ver que este es exactamente el mismo módulo que creamos al final del Modelo de Zona Única.  
 ![gh_03_shade](https://user-images.githubusercontent.com/44324576/52420174-d1fcc780-2af1-11e9-9689-ffb93bd7f946.png)
 _Observe que estos pasos se explican más detalladamente aquí: https://github.com/mostaphaRoudsari/honeybee/wiki/Iterating-to-improve-design_
 
