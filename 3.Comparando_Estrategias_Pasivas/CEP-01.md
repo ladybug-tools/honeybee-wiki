@@ -1,4 +1,4 @@
-Las elecciones de materiales tienen un inmenso impacto en el rendimiento energético. Esta sección ilustrará como Honeybee maneja los materiales modelando ventanas de alto rendimiento.
+Las elecciones de materiales tienen un gran impacto en el rendimiento energético. Esta sección ilustrará como Honeybee maneja los materiales modelando ventanas de alto rendimiento.
 
 **1.01** Aquí hay una descripción general de todos los módulos que agregamos a lo largo del capítulo sobre Técnicas Pasivas. Se basa directamente en el modelo de zona única que creamos antes. Los elementos originales aparecen en grupos de color gris claro y los elementos nuevos aparecen en amarillo.
 
